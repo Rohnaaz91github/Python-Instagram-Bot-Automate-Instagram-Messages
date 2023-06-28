@@ -6,5 +6,7 @@ public interface UserDetailsService {
 	
 	
 	public UserDetails saveUserDetails(UserDetails userDetails);
+	
+	public void deleteById(Integer Id);
 
 }

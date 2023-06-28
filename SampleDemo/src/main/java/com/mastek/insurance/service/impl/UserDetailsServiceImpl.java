@@ -18,6 +18,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		UserDetails userDetails1 = userDetailsRepository.save(userDetails);
 		return userDetails1;
 	}
+
+	@Override
+	public void deleteById(Integer id) {
+		
+		userDetailsRepository.deleteById(id);
+		
+	}
 	
 	
 
